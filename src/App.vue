@@ -1,20 +1,8 @@
 <template>
   <div id="app">
-    <img alt="WSU School of Medicine logo" class="logo" src="./assets/color-logo.png">
-    <Home />
+    <router-view/>
   </div>
 </template>
-
-<script>
-import Home from './components/Home.vue'
-
-export default {
-  name: 'App',
-  components: {
-    Home
-  }
-}
-</script>
 
 <style>
 #app {
@@ -23,10 +11,21 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   /* text-align: center; */
   color: #2c3e50;
-  margin-top: 60px;
-  padding: 40px 80px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 5rem 0;
 }
-.logo {
-  max-width: 267px;
+
+#nav {
+  /* padding: 30px; */
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>

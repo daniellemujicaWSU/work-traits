@@ -1,0 +1,458 @@
+{
+  "One": {
+    "name": "setOne",
+    "one":{
+    "trait": "Competitive",
+    "value": 1
+    },
+    "two":{
+    "trait": "Joyful",
+    "value": 2
+    },
+    "three":{
+    "trait": "Considerate",
+    "value": 3
+    },
+    "four":{
+    "trait": "Harmonious",
+    "value": 4
+    }
+  },
+  "Two": {
+    "name": "setTwo",
+    "one":{
+    "trait": "Tries new ideas",
+    "value": 1
+    },
+    "two":{
+    "trait": "Optimistic",
+    "value": 2
+    },
+    "three":{
+    "trait": "Wants to please",
+    "value": 3
+    },
+    "four":{
+    "trait": "Respectful",
+    "value": 4
+    }
+  },
+  "Three": {
+    "name": "setThree",
+    "one":{
+    "trait": "Will power",
+    "value": 1
+    },
+    "two":{
+    "trait": "Open-minded",
+    "value": 2
+    },
+    "three":{
+    "trait": "Cheerful",
+    "value": 3
+    },
+    "four":{
+    "trait": "Obliging",
+    "value": 4
+    }
+  },
+  "Four": {
+    "name": "setFour",
+    "one":{
+    "trait": "Daring",
+    "value": 1
+    },
+    "two":{
+    "trait": "Expressive",
+    "value": 2
+    },
+    "three":{
+    "trait": "Satisfied",
+    "value": 3
+    },
+    "four":{
+    "trait": "Diplomatic",
+    "value": 4
+    }
+  },
+  "Five": {
+    "name": "setFive",
+    "one":{
+    "trait": "Powerful",
+    "value": 1
+    },
+    "two":{
+    "trait": "Good mixer",
+    "value": 2
+    },
+    "three":{
+    "trait": "Easy on others",
+    "value": 3
+    },
+    "four":{
+    "trait": "Organized",
+    "value": 4
+    }
+  },
+  "Six": {
+    "name": "setSix",
+    "one":{
+    "trait": "Restless",
+    "value": 1
+    },
+    "two":{
+    "trait": "Popular",
+    "value": 2
+    },
+    "three":{
+    "trait": "Neighborly",
+    "value": 3
+    },
+    "four":{
+    "trait": "Abides by rules",
+    "value": 4
+    }
+  },
+  "Seven": {
+    "name": "setSeven",
+    "one":{
+    "trait": "Unconquerable",
+    "value": 1
+    },
+    "two":{
+    "trait": "Playful",
+    "value": 2
+    },
+    "three":{
+    "trait": "Obedient",
+    "value": 3
+    },
+    "four":{
+    "trait": "Fussy",
+    "value": 4
+    }
+  },
+  "Eight": {
+    "name": "setEight",
+    "one":{
+    "trait": "Self-reliant",
+    "value": 1
+    },
+    "two":{
+    "trait": "Fun-loving",
+    "value": 2
+    },
+    "three":{
+    "trait": "Patient",
+    "value": 3
+    },
+    "four":{
+    "trait": "Soft-Spoken",
+    "value": 4
+    }
+  },
+  "Nine": {
+    "name": "setNine",
+    "one":{
+    "trait": "Bold",
+    "value": 1
+    },
+    "two":{
+    "trait": "Charming",
+    "value": 2
+    },
+    "three":{
+    "trait": "Loyal",
+    "value": 3
+    },
+    "four":{
+    "trait": "Easily led",
+    "value": 4
+    }
+  },
+  "Ten": {
+    "name": "setTen",
+    "one":{
+    "trait": "Outspoken",
+    "value": 1
+    },
+    "two":{
+    "trait": "Companionable",
+    "value": 2
+    },
+    "three":{
+    "trait": "Restrained",
+    "value": 3
+    },
+    "four":{
+    "trait": "Accurate",
+    "value": 4
+    }
+  },
+  "Eleven": {
+    "name": "setEleven",
+    "one":{
+    "trait": "Brave",
+    "value": 1
+    },
+    "two":{
+    "trait": "Inspiring",
+    "value": 2
+    },
+    "three":{
+    "trait": "Submissive",
+    "value": 3
+    },
+    "four":{
+    "trait": "Timid",
+    "value": 4
+    }
+  },
+  "Twelve": {
+    "name": "setTwelve",
+    "one":{
+      "trait": "Nervy",
+      "value": 1
+    },
+    "two":{
+      "trait": "Jovial",
+      "value": 2
+    },
+    "three":{
+      "trait": "Even-tempered",
+      "value": 3
+    },
+    "four":{
+      "trait": "Precise",
+      "value": 4
+    }
+  },
+  "Thirteen": {
+    "name": "setThirteen",
+    "one":{
+      "trait": "Stubborn",
+      "value": 1
+    },
+    "two":{
+      "trait": "Attractive",
+      "value": 2
+    },
+    "three":{
+      "trait": "Sweet",
+      "value": 3
+    },
+    "four":{
+      "trait": "Avoids",
+      "value": 4
+    }
+  },
+  "Fourteen": {
+    "name": "setFourteen",
+    "one":{
+      "trait": "Decisive",
+      "value": 1
+    },
+    "two":{
+      "trait": "Talkative",
+      "value": 2
+    },
+    "three":{
+      "trait": "Controlled",
+      "value": 3
+    },
+    "four":{
+      "trait": "Conventional",
+      "value": 4
+    }
+  },
+  "Fifteen": {
+    "name": "setFifteen",
+    "one":{
+      "trait": "Positive",
+      "value": 1
+    },
+    "two":{
+      "trait": "Trusting",
+      "value": 2
+    },
+    "three":{
+      "trait": "Contented",
+      "value": 3
+    },
+    "four":{
+      "trait": "Peaceful",
+      "value": 4
+    }
+  },
+  "Sixteen": {
+    "name": "setSixteen",
+    "one":{
+      "trait": "Takes risks",
+      "value": 1
+    },
+    "two":{
+      "trait": "Warm",
+      "value": 2
+    },
+    "three":{
+      "trait": "Willing to help",
+      "value": 3
+    },
+    "four":{
+      "trait": "Not extreme",
+      "value": 4
+    }
+  },
+  "Seventeen": {
+    "name": "setSeventeen",
+    "one":{
+      "trait": "Argumentative",
+      "value": 1
+    },
+    "two":{
+      "trait": "Light-hearted",
+      "value": 2
+    },
+    "three":{
+      "trait": "Nonchalant",
+      "value": 3
+    },
+    "four":{
+      "trait": "Adaptable",
+      "value": 4
+    }
+  },
+  "Eightteen": {
+    "name": "setEighteen",
+    "one":{
+      "trait": "Original",
+      "value": 1
+    },
+    "two":{
+      "trait": "Persuasive",
+      "value": 2
+    },
+    "three":{
+      "trait": "Gentle",
+      "value": 3
+    },
+    "four":{
+      "trait": "Humble",
+      "value": 4
+    }
+  },
+  "Nineteen": {
+    "name": "setNineteen",
+    "one":{
+      "trait": "Determined",
+      "value": 1
+    },
+    "two":{
+      "trait": "Convincing",
+      "value": 2
+    },
+    "three":{
+      "trait": "Good-natured",
+      "value": 3
+    },
+    "four":{
+      "trait": "Cautious",
+      "value": 4
+    }
+  },
+  "Twenty": {
+    "name": "setTwenty",
+    "one":{
+      "trait": "Persistent",
+      "value": 1
+    },
+    "two":{
+      "trait": "Lively",
+      "value": 2
+    },
+    "three":{
+      "trait": "Generous",
+      "value": 3
+    },
+    "four":{
+      "trait": "Well-disciplined",
+      "value": 4
+    }
+  },
+  "Twenty One": {
+    "name": "setTwentyOne",
+    "one":{
+      "trait": "Forceful",
+      "value": 1
+    },
+    "two":{
+      "trait": "Admirable",
+      "value": 2
+    },
+    "three":{
+      "trait": "Kind",
+      "value": 3
+    },
+    "four":{
+      "trait": "Non-resisting",
+      "value": 4
+    }
+  },
+  "Twenty Two": {
+    "name": "setTwentyTwo",
+    "one":{
+      "trait": "Assertive",
+      "value": 1
+    },
+    "two":{
+      "trait": "Confident",
+      "value": 2
+    },
+    "three":{
+      "trait": "Sympathetic",
+      "value": 3
+    },
+    "four":{
+      "trait": "Tolerant",
+      "value": 4
+    }
+  },
+  "Twenty Three": {
+    "name": "setTwentyThree",
+    "one":{
+      "trait": "Aggressive",
+      "value": 1
+    },
+    "two":{
+      "trait": "Life-of-the-party",
+      "value": 2
+    },
+    "three":{
+      "trait": "Easily fooled",
+      "value": 3
+    },
+    "four":{
+      "trait": "Uncertain",
+      "value": 4
+    }
+  },
+  "Twenty Four": {
+    "name": "setTwentyFour",
+    "one":{
+      "trait": "Eager",
+      "value": 1
+    },
+    "two":{
+      "trait": "High-spirited",
+      "value": 2
+    },
+    "three":{
+      "trait": "Willing",
+      "value": 3
+    },
+    "four":{
+      "trait": "Agreeable",
+      "value": 4
+    }
+  }
+ }
