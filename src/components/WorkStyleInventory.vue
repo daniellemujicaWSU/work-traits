@@ -3,7 +3,7 @@
     <h1>Work Styles Inventory</h1>
     <h2>Select the word or phrase in each set that is most like you. You must choose one from each group in order to get your results.</h2>
     <div class="quizWrapper">
-      <div v-for="(traits, key, index) in traitSet" :key="key">
+      <!-- <div v-for="(traits, key, index) in traitSet" :key="key">
         <h3>Set {{ index + 1 }}</h3>
         <label class="radio">
           <span class="radio__input">
@@ -33,9 +33,45 @@
           </span>
           <span class="radio__label">{{ traits.four.trait }}</span>
         </label>
+      </div> -->
+      <div>
+        <h3>Set {{ currentSet + 1 }}</h3>
+        <label class="radio">
+          <span class="radio__input">
+            <input type="radio" v-model="setValues[currentSet]" :value="Object.values(traitSet)[currentSet].one.value" />
+            <span class="radio__control"></span>
+          </span>
+          <span class="radio__label">{{ Object.values(traitSet)[currentSet].one.trait }}</span>
+        </label>
+        <label class="radio">
+          <span class="radio__input">
+            <input type="radio" v-model="setValues[currentSet]" :value="Object.values(traitSet)[currentSet].two.value" />
+            <span class="radio__control"></span>
+          </span>
+          <span class="radio__label">{{ Object.values(traitSet)[currentSet].two.trait }}</span>
+        </label>
+        <label class="radio">
+          <span class="radio__input">
+            <input type="radio" v-model="setValues[currentSet]" :value="Object.values(traitSet)[currentSet].three.value" />
+            <span class="radio__control"></span>
+          </span>
+          <span class="radio__label">{{ Object.values(traitSet)[currentSet].three.trait }}</span>
+        </label>
+        <label class="radio">
+          <span class="radio__input">
+            <input type="radio" v-model="setValues[currentSet]" :value="Object.values(traitSet)[currentSet].four.value" />
+            <span class="radio__control"></span>
+          </span>
+          <span class="radio__label">{{ Object.values(traitSet)[currentSet].four.trait }}</span>
+        </label>
+      </div>
+      <div class="button-container">
+        <div :class="[currentSet === 0 ? 'disable' : '', complete ? 'hide' : '', 'button', 'prev']" @click="prevSet">Previous</div>
+        <div :class="[currentSet === 23 ? 'disable' : '', complete ? 'hide' : '', 'button', 'next']" @click="nextSet">Next</div>
+        <div :class="[complete ? '' : 'hide', 'button', 'submit']" @click="submitAnswers">Submit</div>
       </div>
     </div>
-    <div :class="[complete ? '' : 'disable', 'button']" @click="submitAnswers">Submit</div>
+    
   </div>
 </template>
 
@@ -45,6 +81,7 @@ export default {
   data() {
     return {
       traitSet: traitBank,
+      currentSet: 0,
       setValues: {
         setOne: null,
         setTwo: null,
@@ -92,6 +129,17 @@ export default {
       this.score.four = Object.values(this.setValues).filter(value => value === 4).length
 
       this.$emit('quizResults', this.score)
+    },
+    nextSet() {
+      console.log('clicked', this.currentSet)
+      if(this.currentSet < 23) {
+        this.currentSet++
+      }
+    },
+    prevSet() {
+      if(this.currentSet > 0) {
+        this.currentSet--
+      }
     }
   }
 }
@@ -151,17 +199,16 @@ export default {
   }
 
   .button {
-    position: relative;
-    left: 50%;
-    display: inline-block;
-    transform: translateX(-50%);
-    margin-top: 2rem;
-    padding: 1rem 4rem;
+    padding: 1rem 0;
+    width: 10rem;
+    border-radius: .25rem;
+    text-align: center;
     background: #4F868E;
     color: white;
     font-weight: bold;
     transition: background 300ms ease;
     cursor: pointer;
+    margin-top: 1rem;
   }
 
   .button:hover {
@@ -171,6 +218,18 @@ export default {
   .disable {
     pointer-events: none;
     background: grey;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .button-container {
+    display: flex;
+  }
+
+  .next {
+    margin-left: auto;
   }
   
 </style>

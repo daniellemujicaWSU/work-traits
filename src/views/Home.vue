@@ -1,8 +1,7 @@
 <template>
   <div class="home">
-    <div @click="test">clickme</div>
-    <WorkStyleInventory @quizResults="showResults($event)"/>
-    <Results :resultsData="results"/>
+    <WorkStyleInventory @quizResults="showResults($event)" v-if="!quizComplete"/>
+    <Results :resultsData="results" v-if="quizComplete"/>
   </div>
 </template>
 
@@ -25,11 +24,13 @@ export default {
         "two": 30,
         "three": 20,
         "four": 15
-      }
+      },
+      quizComplete: false
     }
   },
   methods: {
     showResults(results) {
+      this.quizComplete = true
       this.results.one = workTraitScoringMap.One[results.one]
       this.results.two = workTraitScoringMap.Two[results.two]
       this.results.three = workTraitScoringMap.Three[results.three]
